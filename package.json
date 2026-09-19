@@ -1,0 +1,21 @@
+{
+  "name": "wloc-spoofer-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "npx wrangler dev",
+    "deploy": "npx wrangler deploy --minify",
+    "pages:dev": "npx wrangler pages dev --port 8787 -c wrangler.pages.jsonc",
+    "pages:deploy": "npx wrangler pages deploy -c wrangler.pages.jsonc"
+  },
+  "dependencies": {
+    "hono": "4.10.6"
+  },
+  "devDependencies": {
+    "wrangler": "4.135.0"
+  }
+}
